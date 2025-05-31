@@ -27,7 +27,7 @@ To run the application, ensure that the following tools are installed:
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/quiz-app.git
+git clone https://github.com/parimalIngole/quiz-application.git
 cd quiz-application
 npm install
 npm run build
