@@ -3,11 +3,11 @@
 ## Overview
 This is a simple Quiz Application built using TypeScript, Express, and Docker. It provides a RESTful API that allows users to:
 
-Create and interact with quizzes
+- Create and interact with quizzes
 
-Submit answers
+- Submit answers
 
-Retrieve results
+- Retrieve results
 
 The backend is powered by Node.js, with all business logic and data managed in memory, making it lightweight and ideal for prototyping or small-scale use.
 
