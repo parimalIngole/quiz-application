@@ -33,3 +33,23 @@ npm install
 npm run build
 ```
 
+## Swagger API Documentation and details
+
+This project uses **Swagger** to generate and serve interactive API documentation, following the **OpenAPI 3.0** specification.
+
+Swagger provides a clean, web-based interface that allows developers and testers to:
+
+- Explore all available API endpoints
+- View detailed request and response formats
+- Try out API calls directly from the browser
+- Understand required parameters, status codes, and error messages
+
+### Accessing Swagger Documentation
+
+The Swagger UI is available in the development environment at the following URL:
+
+🔗 **[http://localhost:3000/api-docs](http://localhost:3000/api-docs)**
+
+> ✅ Ensure the server is running before accessing the documentation in your browser.
+
+This interface allows you to interact with the API endpoints, view request/response schemas, and test API functionality directly from your browser.
