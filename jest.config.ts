@@ -1,24 +1,24 @@
 /** @type {import('ts-jest').JestConfigWithTsJest} */
 
 module.exports = {
-    // Use ts-jest preset to transpile TypeScript using Babel under the hood
+  // Use ts-jest preset to enable TypeScript support in Jest
     preset: 'ts-jest',
-    // Use Node.js as the testing environment (good for backend tests)
+    // Specify Node.js environment for running tests (ideal for backend)
     testEnvironment: 'node',
-    // Load setup files before running tests (needed for decorators, etc.)
+   // Load setup files before tests (e.g., for decorators or metadata reflection)
     setupFiles: ['reflect-metadata'],
-    // Define how files should be transformed before testing
+    // Configure how files are transformed before testing (TypeScript with ts-jest)
     transform: {
         '^.+\\.ts$': 'ts-jest',
     },
-    // Recognize these file extensions in modules
+    // File extensions Jest will recognize and process
     moduleFileExtensions: ['ts', 'js'],
-    // Look for test files ending with .test.ts in any folder
+    // Pattern to locate test files (all .test.ts files in the project)
     testMatch: ['**/*.test.ts'],
-    // Support absolute imports using "@/..." by mapping it to the src/ directory
+    // Map module paths starting with "@" to the src/ directory (for absolute imports)
     moduleNameMapper: {
         '^@/(.*)$': '<rootDir>/src/$1',
     },
-    // Display detailed results for each test
-    verbose: true,
+    // Show individual test results with detailed information
+     verbose: true,
 };
